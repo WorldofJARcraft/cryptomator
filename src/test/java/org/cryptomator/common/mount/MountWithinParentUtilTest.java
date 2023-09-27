@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.DirectoryNotEmptyException;
 import java.nio.file.Files;
+import java.nio.file.FileSystemException;
 import java.nio.file.Path;
 import java.util.Objects;
 
@@ -234,7 +235,7 @@ class MountWithinParentUtilTest {
 	private static boolean isHidden(Path path) throws IOException {
 		try {
 			return (boolean) Objects.requireNonNullElse(Files.getAttribute(path, "dos:hidden", NOFOLLOW_LINKS), false);
-		} catch (UnsupportedOperationException | IllegalMountPointException e) {
+		} catch (FileSystemException | UnsupportedOperationException | IllegalMountPointException e) {
 			return false;
 		}
 	}
