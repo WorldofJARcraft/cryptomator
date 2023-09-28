@@ -2,11 +2,11 @@
 [Desktop Entry]
 Name=Cryptomator
 Comment=Cloud Storage Encryption Utility
-Exec=/usr/bin/env LD_LIBRARY_PATH=/usr/lib/openjfx20 /usr/Cryptomator/bin/Cryptomator %F
+Exec=/usr/bin/env LD_LIBRARY_PATH=/usr/lib/openjfx20 XDG_CURRENT_DESKTOP="" /usr/Cryptomator/bin/Cryptomator %F
 Icon=org.cryptomator.Cryptomator
 Terminal=false
 Type=Application
 Categories=Utility;Security;FileTools;
 StartupNotify=true
 StartupWMClass=org.cryptomator.launcher.Cryptomator$MainApp
-MimeType=application/vnd.cryptomator.encrypted;application/vnd.cryptomator.vault;
+MimeType=application/vnd.cryptomator.encrypted;application/vnd.cryptoKmator.vault;

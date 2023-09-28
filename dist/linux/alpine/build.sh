@@ -35,8 +35,8 @@ $JAVA_HOME/bin/jpackage \
 	--app-version "$pkgver" \
 	--java-options "--enable-preview" \
 	--java-options "--enable-native-access=org.cryptomator.jfuse.linux.amd64,org.cryptomator.jfuse.linux.aarch64,org.purejava.appindicator" \
-	--java-options "-Xss5m" \
-	--java-options "-Xmx256m" \
+	--java-options "-Xss16m" \
+	--java-options "-Xmx512m" \
 	--java-options "-Dcryptomator.appVersion=\"$pkgver\"" \
 	--java-options "-Dfile.encoding=\"utf-8\"" \
 	--java-options "-Djava.net.useSystemProxies=true" \
